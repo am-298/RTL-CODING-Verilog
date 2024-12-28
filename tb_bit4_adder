@@ -1,0 +1,40 @@
+//// testbench 
+module tb_bit4_adder;
+    // Testbench inputs (reg type for driving signals)
+    reg [3:0] a;
+    reg [3:0] b;
+
+    // Testbench outputs (wire type to capture module outputs)
+    wire [3:0] sum;
+    wire carry;
+
+    // Instantiate the DUT (Device Under Test)
+    bit4_adder uut (
+        .a(a),
+        .b(b),
+        .sum(sum),
+        .carry(carry)
+    );
+
+    // Testbench stimulus
+    initial begin
+        // Display header for readability
+        $display("Time\t a\t   b\t   sum\t carry");
+        $monitor("%0t\t %b\t %b\t %b\t %b", $time, a, b, sum, carry);
+
+        // Apply test cases
+        a = 4'b0000; b = 4'b0001; #10;  // Test case 1: No carry
+        a = 4'b0010; b = 4'b0011; #10;  // Test case 2: Normal sum
+        a = 4'b1111; b = 4'b1111; #10;  // Test case 3: Overflow carry
+        a = 4'b0101; b = 4'b1010; #10;  // Test case 4: Mixed bits
+        a = 4'b1000; b = 4'b1000; #10;  // Test case 5: Carry generation
+        a = 4'b0111; b = 4'b0001; #10;  // Test case 6: Sum near maximum
+        
+        $finish; // End simulation
+    end
+  initial begin
+  $dumpfile("dump.vcd");
+  $dumpvars(1);
+end
+  
+endmodule
