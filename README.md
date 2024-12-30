@@ -23,5 +23,3 @@ If you have any questions or suggestions, feel free to open an issue in the repo
 
 - **Email**: [ayushimaur8@gmail.com]
 - **LinkedIn**: [https://www.linkedin.com/in/ayushimaurya298/]
-
--
