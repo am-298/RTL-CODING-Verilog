@@ -1,25 +1,50 @@
-This repository is a collection of well-documented and tested RTL modules that aim to:
-- Provide learning material for those interested in digital logic design and Verilog/SystemVerilog programming.
-- Serve as a reference for common hardware design patterns like multiplexers, flip-flops, counters, memory units, and arithmetic units.
-- Offer reusable and customizable code that can be used as building blocks for more complex digital systems.
+# ⚙️ RTL Coding in Verilog
 
-## Key Learning Areas
+This repository contains a collection of **RTL (Register Transfer Level)** design modules written in **Verilog/SystemVerilog**.  
+Each module demonstrates key concepts in **digital logic design**, serving as both a **learning resource** and a **reusable reference** for larger hardware projects.
 
-The projects here focus on a variety of essential concepts in digital logic, including:
-- **Combinational and Sequential Logic**: Modules that illustrate both types of logic, such as counters, shift registers, and multiplexers.
-- **Memory Structures**: Examples of various memory models, including dual-port RAM and SRAM.
-- **Arithmetic Operations**: Demonstrations of basic operations like addition and parity generation.
-- **Clocking and Reset Design**: Projects that cover clock generation, reset handling, and synchronization.
+---
 
-## Tools and Technologies
+## 🧩 What’s Inside
 
-These projects use Verilog and SystemVerilog as the hardware description languages. To simulate and verify the modules, the following tools can be used:
-- **EDA Playground**
-- **Vivado**
+- **Combinational Logic:** Multiplexers, Decoders, Comparators, Adders  
+- **Sequential Logic:** Flip-Flops, Counters, Shift Registers  
+- **Arithmetic Units:** Multipliers, Barrel Shifter, Booth Algorithm  
+- **Memory Modules:** Dual-Port RAM, SRAM  
+- **FSM Designs:** Mealy & Moore Sequence Detectors  
+- **Clock & Reset:** Basic synchronization and control modules  
 
-## Contact
+---
 
-If you have any questions or suggestions, feel free to open an issue in the repository or reach out to me directly. I'm always open to collaboration!
+## 📁 Example Modules
 
-- **Email**: [ayushimaur8@gmail.com]
-- **LinkedIn**: [https://www.linkedin.com/in/ayushimaurya298/]
+| Category | Examples |
+|-----------|-----------|
+| **Combinational** | `mux`, `priority_decoder`, `parity`, `look_ahead_carry` |
+| **Sequential** | `d_flipflop`, `jk_flipflop`, `4_Ripple_counter`, `shift_register` |
+| **Arithmetic** | `bit4_adder`, `array_multiplier`, `booth_algorithm`, `barrel_shifter` |
+| **Memory** | `8-bit_dual_port_RAM`, `SRAM_module` |
+| **FSM** | `sequence_detector`, `mealy_detector`, `moore_detector` |
+
+---
+
+## 🧠 Learning Focus
+
+- **Combinational vs Sequential Logic**
+- **Memory and Timing Concepts**
+- **FSM (Finite State Machine) Design**
+- **Clocking and Reset Techniques**
+
+---
+
+## 🧰 Tools Used
+
+- **Languages:** Verilog, SystemVerilog  
+- **Simulation:** Vivado, ModelSim, or EDA Playground  
+
+---
+
+## 🚀 How to Run
+
+```bash
+git clone https://github.com/yourusername/RTL-CODING-Verilog.git
